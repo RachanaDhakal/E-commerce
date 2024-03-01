@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet"/>
+   
+  <!--Font awesome!-->
+  <script src="https://kit.fontawesome.com/f4e855eb8f.js" crossorigin="anonymous"></script>
+  
+  
+  <div class="container pt-3">
+  
+    <div class="input-group">
+       <a class="navbar-brand" href="#"> <img class="me-3 me-md-5" src="https://www.gyapu.com/806b0f041fef60968c877fe5b54014cb.svg" width="90px"></img></a> <!--LOGO!-->
+    
+    <input type="text" id="input-form" class="form-control" placeholder="Search" aria-label="Text input with dropdown button">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All type</button>
+    <button class="btn btn-primary d-none d-lg-block"><i class="fa-solid fa-magnifying-glass rounded d-none d-lg-block"></i></button>
+   
+    <div class="ms-md-5 mt-2 mt-md-0">
+      <a type="button" class="btn btn-outline-primary fw-500 rounded ">
+        <i class="fa-solid fa-user me-lg-2"></i>
+        <p class="d-none d-lg-inline">Sign in</p>
+      </a>
+      <a type="button" class="btn btn-outline-primary fw-500 rounded">
+        <i class="fa-solid fa-heart me-lg-2"></i>
+        <p class="d-none d-lg-inline">Wishlist</p>
+      </a>
+      <a type="button" class="btn btn-outline-primary fw-500 rounded ">
+        <i class="fa-solid fa-cart-shopping me-lg-2"></i>
+        <p class="d-none d-lg-inline">My Cart</p>
+      </a>
+      </div>
+    
+      <ul class="dropdown-menu  dropdown-menu-start">
+        <li><a class="dropdown-item" href="#">Best</a></li>
+        <li><a class="dropdown-item" href="#">Special</a></li>
+        <li><a class="dropdown-item" href="#">Latest</a></li>
+      </ul>
+  </div>
+  
+  </div> <!--Container div!-->
+  <hr>
+  
+  
+  <!--  Navbar  -->
+  <div class="container mt-3">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    
+      <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Groceries
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Cooking Essentials</a></li>
+              <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+              <li><a class="dropdown-item" href="#">Sweets & Chocolates</a></li>
+              <li><a class="dropdown-item" href="#">Dired Goods</a></li>
+              <li><a class="dropdown-item" href="#">Frozen Items</a></li>
+              <li><a class="dropdown-item" href="#">Hygine Essentials</a></li>
+              <li><a class="dropdown-item" href="#">Bakery</a></li>
+              <li><a class="dropdown-item" href="#">Dry & Packaged Food</a></li>
+              <li><a class="dropdown-item" href="#">Beverages</a></li>
+              <li><a class="dropdown-item" href="#">Laundry & Household</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              G-Bar
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Wine</a></li>
+              <li><a class="dropdown-item" href="#">Beer</a></li>
+              <li><a class="dropdown-item" href="#">Whiskey</a></li>
+              <li><a class="dropdown-item" href="#">Vodka</a></li>
+              <li><a class="dropdown-item" href="#">Rum</a></li>
+              <li><a class="dropdown-item" href="#">Gin</a></li>
+              <li><a class="dropdown-item" href="#">Tequila</a></li>
+              <li><a class="dropdown-item" href="#">Cider</a></li>
+              <li><a class="dropdown-item" href="#">Brandy</a></li>
+              <li><a class="dropdown-item" href="#">Champangne</a></li>
+              <li><a class="dropdown-item" href="#">Liqueurs</a></li>
+              <li><a class="dropdown-item" href="#">Pipe & Smoke</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Electronics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+              <li><a class="dropdown-item" href="#">Tablets</a></li>
+              <li><a class="dropdown-item" href="#">Laptop</a></li>
+              <li><a class="dropdown-item" href="#">Cameras</a></li>
+              <li><a class="dropdown-item" href="#">Printer</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Electronics Accessories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Mobile & Tablet Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Audio</a></li>
+              <li><a class="dropdown-item" href="#">Computer Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Wearable Technology</a></li>
+              <li><a class="dropdown-item" href="#">Camera Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Storage Device</a></li>
+              <li><a class="dropdown-item" href="#">Network Components</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Fashion
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Women's fashion</a></li>
+              <li><a class="dropdown-item" href="#">Men's fashion</a></li>
+              <li><a class="dropdown-item" href="#">Bags & Shoes</a></li>
+              <li><a class="dropdown-item" href="#">Watch & Accessories</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Beauti & Health
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Make Up</a></li>
+              <li><a class="dropdown-item" href="#">SKin Care</a></li>
+              <li><a class="dropdown-item" href="#">Hair Care</a></li>
+              <li><a class="dropdown-item" href="#">Bath & Body</a></li>
+              <li><a class="dropdown-item" href="#">Beauty Tools</a></li>
+              <li><a class="dropdown-item" href="#">Fragrances</a></li>
+              <li><a class="dropdown-item" href="#">Personal Care</a></li>
+              <li><a class="dropdown-item" href="#">Men's Care</a></li>
+              <li><a class="dropdown-item" href="#">tools & Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Health Supplements</a></li>
+              <li><a class="dropdown-item" href="#">Medical Supplies</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              TV & Home Appliances
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Television</a></li>
+              <li><a class="dropdown-item" href="#">Largee Home Appliances</a></li>
+              <li><a class="dropdown-item" href="#">Small Kitchen Appliancee</a></li>
+              <li><a class="dropdown-item" href="#">Heating & Cooling</a></li>
+              <li><a class="dropdown-item" href="#">Vacuums & Floor Care</a></li>
+              <li><a class="dropdown-item" href="#">Audio & Video Devices</a></li>
+              <li><a class="dropdown-item" href="#">Iron & Garment Care</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home & Lifestyle
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Media, Music & Books</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Furniishing & Decor</a></li>
+              <li><a class="dropdown-item" href="#">Lightings</a></li>
+              <li><a class="dropdown-item" href="#">Bedding & Its Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Decor</a></li>
+              <li><a class="dropdown-item" href="#">Storage & Organization</a></li>
+              <li><a class="dropdown-item" href="#">Bath & Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Tiils & Home Improvements</a></li>
+              <li><a class="dropdown-item" href="#">Musical Instruments</a></li>
+              <li><a class="dropdown-item" href="#">Stationery & Crafts</a></li>
+              <li><a class="dropdown-item" href="#">Digital goods</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Fitness
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Exercise & Fitness</a></li>
+              <li><a class="dropdown-item" href="#">Strength Training Equipment</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            For Kids
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Clothing & Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Baby Personal Care</a></li>
+              <li><a class="dropdown-item" href="#">Baby Safety Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Maternity Care</a></li>
+              <li><a class="dropdown-item" href="#">Baby Gear</a></li>
+              <li><a class="dropdown-item" href="#">Nursery</a></li>
+              <li><a class="dropdown-item" href="#">Toys & Games</a></li>
+              <li><a class="dropdown-item" href="#">Diapers & Poty</a></li>
+              <li><a class="dropdown-item" href="#">Feeding</a></li>
+            </ul>
+          </li>
+      </div>
+      </div>
+        
+        <!-- Content --->
+        <div class="bg-primary py-5">
+          <div class="container py-5 text-light">
+            <img src="./E-commerce Picture/Advertisement 1.png" width="100%">
+            <h1 class="display-1">Best products &<br> Brands in our store</h1>
+            <p class="lead">Trendy Products, Factory Prices, Excellent Service</p>
+            <a  href="#" role="button" class="btn btn-warning fs-5  text-light " style="background-color:#ff8100;">Shop now</a>
+            <a  href="#" role="button" class="btn btn-light text-dark fs-5  ">Learn more</a>
+          </div>
+        </div>
+      
+      
+      <!--   Product section   -->
+      
+      <div class="py-5">
+         <div class="container">
+           <h3 class="fw-bold mb-sm-3 mb-md-5 text-center text-md-start">Top Picks</h3>
+           
+           <div class="row g-3 d-flex justify-content-evenly">
+       <div class="card" style="width: 18rem;">
+         <img class="img" src="./E-commerce Picture/Rectangle 43.png" width="100%" height="240px"></img>
+    <div class="card-body">
+      <hr>
+      <h5 class="card-title">Melao Lip Scrub</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 900</h6>
+       <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link"> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div> <!--First Card--->
+    
+          
+          
+          <div class="card" style="width: 18rem;">
+            <img src="./E-commerce Picture/Rectangle 44.png" width="100%" height="240px"></img>
+       
+    <div class="card-body">
+         <hr>
+      <h5 class="card-title">HiFuture Sound Mini Speaker Portable...</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 4,399</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  2nd card -->
+     
+        
+     
+        <div class="card" style="width: 18rem;">
+            <img src="./E-commerce Picture/Rectangle 45.png" width="100%" height="240px"></img>
+       
+    <div class="card-body">
+         <hr>
+      <h5 class="card-title">Mamaearth Ubtan Face Scrub - 10g</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 558</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  3rd card -->
+      
+      
+      <div class="card" style="width: 18rem;">
+            <img src="./E-commerce Picture/Rectangle 60.png" width="100%" height="240px"></img>
+       
+    <div class="card-body">
+         <hr>
+      <h5 class="card-title">Bella Vita Organic Neem Comb Dual Teeth</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 400</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  4th card -->
+    
+    
+     <div class="card" style="width: 18rem;">
+      <img src="./E-commerce Picture/Rectangle 47.png" width="100%" height="240px"></img> 
+    <div class="card-body">
+       <hr>
+      <h5 class="card-title">Baltra Air Cooler Booze BAC 207</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 18,575</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  5th card -->
+
+   <div class="card" style="width: 18rem;">
+       <img src="./E-commerce Picture/Rectangle 51.png" width="100%" height="240px"></img>   
+    <div class="card-body">
+         <hr>
+      <h6 class="card-subtitle mb-2 text-muted">Gravity Beast 350 True Wireless Gaming Earbuds</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 3,359</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  6th card -->
+  
+   <div class="card" style="width: 18rem;">
+      <img src="./E-commerce Picture/Rectangle 49.png" width="100%" height="240px"></img>   
+    <div class="card-body">
+         <hr>
+      <h6 class="card-subtitle mb-2 text-muted">Bella Vita Organic Nico Lips Scrub</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 799</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  7th card -->
+  
+   <div class="card" style="width: 18rem;">
+     <img src="./E-commerce Picture/Rectangle 50.png" width="100%" height="240px"></img>   
+    <div class="card-body">
+         <hr>
+      <h6 class="card-subtitle mb-2 text-muted">Melao Hand Cream 50ml</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Rs. 800</h6>
+      <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to card</a>
+      <a href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+    </div>
+  </div><!--  8th card -->
+  </div><!--row and container div--->
+  </div>
+  
+    
+  <!--Women Fashion section---->
+  <div class="pb-5">
+    <div class="container py-5">
+      <h3 class="h3 fw-bold mb-3 text-center text-md-start mb-3">Women fashion</h3>
+     <div class="row mt-md-5">
+       <img src="./E-commerce Picture/Rectangle 63.png">
+
+       <div class="col-sm-6 col-md-6 col-lg-3">
+         <img class="bg rounded" src="./E-commerce Picture/Rectangle 65.png" width="250" height="200"></img>
+         <div class="mt-3">
+           <a href="#"  class="fw-bold">Green Tone Butterfly Trousers For Women</a>
+           <p class="text-muted">Rs.521</p>
+         </div>
+       </div>
+       <!--col div -->
+       
+        <div class="col-sm-6 col-md-6 col-lg-3">
+         <img class="bg rounded" src="./E-commerce Picture/Rectangle 52.png" width="250" height="200"></img>
+         <div class="mt-3">
+           <a class="fw-bold">Yellow Blouse</a>
+           <p class="text-muted">Rs.950</p>
+         </div>
+       </div>
+       <!--col div -->
+       
+        <div class="col-sm-6 col-md-6 col-lg-3">
+         <img class="bg rounded" src="./E-commerce Picture/Rectangle 69.png" width="250" height="200"></img>
+         <div class="mt-3">
+           <a class="fw-bold">Wosa Leaf Printed</a>
+           <p class="text-muted">Rs. 2,940</p>
+         </div>
+       </div>
+       <!--col div -->
+       
+        <div class="col-sm-6 col-md-6 col-lg-3">
+         <img class="bg rounded" src="./E-commerce Picture/Rectangle 71.png" width="250" height="200"></img>
+         <div class="mt-3">
+           <a class="fw-bold">Combo Set Of Babydoll Lingerie</a>
+           <p class="text-muted">Rs.1,800</p>
+         </div>
+       </div>
+       <!--col div -->
+      <!-- div row -->
+    </div>
+  </div>
+  
+<!-- Men Fashion section---->
+    <div class="pb-5">
+      <div class="container py-5">
+        <h3 class="h3 fw-bold mb-3 text-center text-md-start mb-3">Men fashion</h3>
+       <div class="row mt-md-5">
+         <img src="./E-commerce Picture/Rectangle 72.png">
+  
+         <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 59.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a href="#"  class="fw-bold">Check Shirt</a>
+             <p class="text-muted">Rs.1,121</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 67.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Mikey Anime Printed</a>
+             <p class="text-muted">Rs.450</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 62.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Sunglasses</a>
+             <p class="text-muted">Rs. 2,940</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 95.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Winter Sweater</a>
+             <p class="text-muted">Rs.1,800</p>
+           </div>
+         </div>
+         <!--col div -->
+        <!-- div row -->
+      </div>
+    </div>
+
+    <!-- Mobile section---->
+    <div class="pb-5">
+      <div class="container py-5">
+        <h3 class="h3 fw-bold mb-3 text-center text-md-start mb-3">Mobile</h3>
+       <div class="row mt-md-5">
+        <img src="./E-commerce Picture/Rectangle 31.png">
+         <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 74.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a href="#"  class="fw-bold">Samsung Galaxy A03s 4 GB 64 GB (A037F)</a>
+             <p class="text-muted">Rs.17,499</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 76.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Samsung Galaxy A53 5G</a>
+             <p class="text-muted">Rs.57,499</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 78.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Samsung Galaxy Tab A8 SM -X205N 4G LTE</a>
+             <p class="text-muted">Rs. 42,499</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 80.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Samsung Galaxy A336E 5G</a>
+             <p class="text-muted">Rs.41,499</p>
+           </div>
+         </div>
+         <!--col div -->
+        <!-- div row -->
+      </div>
+    </div>
+
+    <!-- Beauti & Skincare section---->
+    <div class="pb-5">
+      <div class="container py-5">
+        <h3 class="h3 fw-bold mb-3 text-center text-md-start mb-3">Beauty & Skincare</h3>
+       <div class="row mt-md-5"> 
+        <img src="./E-commerce Picture/Rectangle 32.png">
+         <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 33.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a href="#"  class="fw-bold">Oriflame Oncolour Matte Lipstick Chocolate</a>
+             <p class="text-muted">Rs.299</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 36.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Oriflame Love Nature Hydrating Face Cream...</a>
+             <p class="text-muted">Rs.499</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 42.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Cleanser Suction Removal Facial Acne Pore Cleaner</a>
+             <p class="text-muted">Rs. 899</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 40.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">4 in 1 Magnifying LED Mirror</a>
+             <p class="text-muted">Rs.999</p>
+           </div>
+         </div>
+         <!--col div -->
+        <!-- div row -->
+      </div>
+    </div>
+
+        <!-- liquors section---->
+        <div class="pb-5">
+          <div class="container py-5">
+            <h3 class="h3 fw-bold mb-3 text-center text-md-start mb-3">liquors</h3>
+           <div class="row mt-md-5"> 
+             <div class="col-sm-6 col-md-6 col-lg-3">
+               <img class="bg rounded" src="./E-commerce Picture/Rectangle 100.png" width="250" height="200"></img>
+               <div class="mt-3">
+                 <a href="#"  class="fw-bold">Old Durbar Black Chimney</a>
+                 <p class="text-muted">Rs.3,430</p>
+               </div>
+             </div>
+             <!--col div -->
+             
+              <div class="col-sm-6 col-md-6 col-lg-3">
+               <img class="bg rounded" src="./E-commerce Picture/Rectangle 102.png" width="250" height="200"></img>
+               <div class="mt-3">
+                 <a class="fw-bold">Snowman Gin</a>
+                 <p class="text-muted">Rs.480</p>
+               </div>
+             </div>
+             <!--col div -->
+             
+             <div class="col-sm-6 col-md-6 col-lg-3">
+              <img class="bg rounded" src="./E-commerce Picture/Rectangle 106.png" width="250" height="200"></img>
+              <div class="mt-3">
+                <a class="fw-bold">8848 Vodka</a>
+                <p class="text-muted">Rs.2,055</p>
+              </div>
+            </div>
+            <!--col div -->
+             
+              <div class="col-sm-6 col-md-6 col-lg-3">
+               <img class="bg rounded" src="./E-commerce Picture/Rectangle 104.png" width="250" height="200"></img>
+               <div class="mt-3">
+                 <a class="fw-bold">Barahsinghe German Malts Craft Pilsner Bottle</a>
+                 <p class="text-muted">Rs. 390</p>
+               </div>
+             </div>
+             <!--col div -->
+             
+             
+            <!-- div row -->
+          </div>
+        </div>
+
+  <!-- Made in Nepal section---->
+    <div class="pb-5">
+      <div class="container py-5">
+        <h3 class="h3 fw-bold mb-3 text-center text-md-start mb-3">Made in Nepal</h3>
+       <div class="row mt-md-5"> 
+         <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 83.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a href="#"  class="fw-bold">Solsing Carpets Square Dotted Red And Black Woolen Carpet</a>
+             <p class="text-muted">Rs.2,999</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 89.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Wooden Ganesh Mask Red 12 Inches Ganesha</a>
+             <p class="text-muted">Rs.1,200</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 87.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Handcrafted Pustakari Gift Cylinder 390gm</a>
+             <p class="text-muted">Rs. 749</p>
+           </div>
+         </div>
+         <!--col div -->
+         
+          <div class="col-sm-6 col-md-6 col-lg-3">
+           <img class="bg rounded" src="./E-commerce Picture/Rectangle 85.png" width="250" height="200"></img>
+           <div class="mt-3">
+             <a class="fw-bold">Swaadilo Badaam 
+              Khursani (Fish) - 200 gm</a>
+             <p class="text-muted">Rs.320</p>
+           </div>
+         </div>
+         <!--col div -->
+        <!-- div row -->
+      </div>
+    </div>
+
+    <!--  New section -->
+    <div class="py-5 px-3">
+      <div class="container py-5">
+        <h3 class="fw-bold  text-center text-md-start mb-3">Why choose Us?</h3>
+        <div class="row">
+            
+        <div class="col-lg-4 col-md-6 d-flex align-items-center">
+       
+          <div class="bg-white shadow-sm rounded-circle p-3">
+          <i class="fa-solid fa-money-bill fs-1 text-primary"></i>
+        </div>
+          
+          <div class="ms-3 mt-md-5">
+            <h6 class="h6 fw-bold">Reasonable prices</h6>
+          </div>
+        </div>
+               
+            
+        <div class="col-lg-4 col-md-6 d-flex align-items-center">
+       
+          <div class="bg-white shadow-sm rounded-circle p-3">
+          <i class="fa-solid fa-star  fs-1 text-primary"></i>
+        </div>
+          
+          <div class="ms-3 mt-md-5">
+            <h6 class="h6 fw-bold">Best quality</h6>
+          </div>
+        </div>
+          
+            
+        <div class=" col-lg-4 col-md-6 d-flex align-items-center">
+       
+          <div class="bg-white shadow-sm rounded-circle p-3">
+         <i class="fa-solid fa-plane  fs-1 text-primary"></i>
+        </div>
+          <div class="ms-3 mt-md-5">
+            <h6 class="h6 fw-bold">Worldwide shipping</h6>
+          </div>
+        </div>
+            
+            
+        <div class="col-lg-4 col-md-6 d-flex align-items-center">
+       
+          <div class="bg-white shadow-sm rounded-circle p-3">
+         <i class="fa-solid fa-users  fs-1 text-primary"></i>
+        </div>
+          <div class="ms-3 mt-md-5">
+            <h6 class="h6 fw-bold">Customer satisfaction</h6>
+          </div>
+        </div>
+           
+            
+        <div class="col-lg-4 col-md-6 d-flex align-items-center">
+       
+          <div class="bg-white shadow-sm rounded-circle p-3">
+       <i class="fa-solid fa-thumbs-up  fs-1 text-primary"></i>
+        </div>
+          <div class="ms-3 mt-md-5">
+            <h6 class="h6 fw-bold">Happy customers</h6>
+          </div>
+        </div>
+         
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+       
+          <div class="bg-white shadow-sm rounded-circle p-3">
+       <i class="fa-solid fa-box-open fs-1 text-primary"></i>
+        </div>
+          <div class="ms-3 mt-md-5">
+            <h6 class="h6 fw-bold">Thousand items</h6>
+          </div>
+        </div>
+          
+        
+        </div><!--row idv--->
+        
+      </div>
+      </div>
+
+  <!-- Footer -->
+  
+  <div class="py-5">
+    <div class="container">
+      
+    <div class="row d-flex">
+      
+      <div class="col-md-12 col-lg-3 mb-3">
+     
+      <img src="https://www.gyapu.com/806b0f041fef60968c877fe5b54014cb.svg" width="90px"></img>
+      <p class="mt-4 text-muted">Copyright © 2021 Gyapu. <br> All Rights Reserved.</p>
+  
+      </div>
+      
+      <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+          
+        <h6 class="h6 fw-bold">Sell</h6>
+  
+          <a 
+             href="#" class="text-decoration-none text-muted">Start Selling</a>
+         <a 
+            href="#" class="text-decoration-none text-muted">Learn to Sell</a>
+         <a 
+            href="#" class="text-decoration-none text-muted">Independent Seller</a>
+         <a 
+            href="#" class="text-decoration-none text-muted">Earn More</a>
+      </div>
+      
+      <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+        <h6 class="h6 fw-bold">Shop Here</h6>
+        <a href="#" class="text-decoration-none text-muted">Women's Fashion</a>
+         <a href="#" class="text-decoration-none text-muted">Mobile</a>
+         <a href="#" class="text-decoration-none text-muted">Consumer Electronics</a>
+         <a href="#" class="text-decoration-none text-muted">Beauty and Skincare</a>
+      </div>
+      
+      <div class="col-6 col-sm-6 col-md-4 col-lg-2 mt-3 mt-md-0">
+        <h6 class="h6 fw-bold">Benifits</h6>
+        <a href="#" class="text-decoration-none text-muted">Cash Back</a>
+         <a href="#" class="text-decoration-none text-muted">Daily Deals</a>
+         <a href="#" class="text-decoration-none text-muted">Product Policy</a>
+      </div>
+      
+      <div class="col-6 col-sm-6 col-md-4 col-lg-2 mt-3 mt-md-0">
+        <h6 class="h6 fw-bold">About Gyapu</h6>
+        <a href="#" class="text-decoration-none text-muted">Company Info</a>
+         <a href="#" class="text-decoration-none text-muted">News & Media</a>
+         <a href="#" class="text-decoration-none text-muted">Gyapu Family Package</a>
+      </div>
+      
+        <div class="input-group">
+    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button">Join</button>
+    </div>
+  </div>
+</div>
+</div>
+    <!--row div-->
+</div>
+</div>   
+</body>
+</html>
